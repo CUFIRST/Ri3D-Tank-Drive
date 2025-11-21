@@ -29,6 +29,8 @@ public class Robot extends TimedRobot {
     // Invert right side motors so they move forward together
     rightMaster.setInverted(true);
     rightFollower.setInverted(true);
+    
+    differentialDrive.setDeadband(0.05);
   }
 
   @Override
@@ -38,7 +40,6 @@ public class Robot extends TimedRobot {
     // Right stick X = turning
     double rotation = controller.getRightX();
 
-    differentialDrive.setDeadband(0.05);
     differentialDrive.arcadeDrive(throttle, rotation, false);
   }
 }
