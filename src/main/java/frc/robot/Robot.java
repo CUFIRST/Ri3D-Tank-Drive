@@ -2,14 +2,17 @@ package frc.robot;
 
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
+import edu.wpi.first.cameraserver.CameraServer;
 import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj.motorcontrol.Spark;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import edu.wpi.first.cameraserver.CameraServer;
 
 public class Robot extends TimedRobot {
+  
   private final WPI_TalonSRX leftMaster = new WPI_TalonSRX(1);
   private final WPI_TalonSRX rightMaster = new WPI_TalonSRX(3);
 
@@ -22,8 +25,8 @@ public class Robot extends TimedRobot {
    */
   private final Encoder gearMotorEncoder = new Encoder(8, 9, true); // TODO: plug these in
   private final Spark gearMotor = new Spark(8); // TODO: plug this in
-
   private final Spark wiperMotor = new Spark(9);
+  // CameraServer does not require instantiation
 
   private final DifferentialDrive differentialDrive = new DifferentialDrive(leftMaster, rightMaster);
 
@@ -31,6 +34,8 @@ public class Robot extends TimedRobot {
 
   @Override
   public void robotInit() {
+    // Start camera
+    CameraServer.startAutomaticCapture();
     // Set followers
     leftFollower.follow(leftMaster);
     rightFollower.follow(rightMaster);
