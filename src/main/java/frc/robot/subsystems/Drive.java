@@ -41,8 +41,7 @@ public class Drive extends SubsystemBase {
 
   private final DifferentialDrive differentialDrive = new DifferentialDrive(leftMaster, rightMaster);
   
-  // TODO: the gear ratio is almost certainly not correct (also change it in PathPlanner settings when you find the real one)
-  private final DifferentialDrivetrainSim drivetrainSim = DifferentialDrivetrainSim.createKitbotSim(KitbotMotor.kDualCIMPerSide,  KitbotGearing.k8p45, KitbotWheelSize.kSixInch, null);
+  private final DifferentialDrivetrainSim drivetrainSim = DifferentialDrivetrainSim.createKitbotSim(KitbotMotor.kDualCIMPerSide, KitbotGearing.k10p71, KitbotWheelSize.kSixInch, null);
   private final Field2d field = new Field2d();
   private final Timer timer = new Timer();
 
