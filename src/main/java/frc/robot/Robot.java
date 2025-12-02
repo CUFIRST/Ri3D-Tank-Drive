@@ -63,7 +63,7 @@ public class Robot extends TimedRobot {
     differentialDrive.setDeadband(0.05);
 
     // outputs 1.0 rotations per 1.0 *output shaft* rotations
-    gearMotorEncoder.setDistancePerPulse(1 / (7 * (226233 / 3179)));
+    gearMotorEncoder.setDistancePerPulse(1.0 / (7 * (226233 / 3179)));
     revQuadratureEncoder.setDistancePerPulse(1.0 / 2048);
   }
 
