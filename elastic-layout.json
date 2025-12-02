@@ -1,0 +1,790 @@
+{
+  "version": 1.0,
+  "grid_size": 128,
+  "tabs": [
+    {
+      "name": "Configs",
+      "grid_layout": {
+        "layouts": [
+          {
+            "title": "ELEVATOR",
+            "x": 0.0,
+            "y": 0.0,
+            "width": 256.0,
+            "height": 768.0,
+            "type": "List Layout",
+            "properties": {
+              "label_position": "RIGHT"
+            },
+            "children": [
+              {
+                "title": "Update",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Toggle Button",
+                "properties": {
+                  "topic": "/MotorConfig/ELEVATOR/UpdateConfig",
+                  "period": 0.06,
+                  "data_type": "boolean"
+                }
+              },
+              {
+                "title": "kP",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/ELEVATOR/kP",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kI",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/ELEVATOR/kI",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kD",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/ELEVATOR/kD",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kS",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/ELEVATOR/kS",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kV",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/ELEVATOR/kV",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kG",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/ELEVATOR/kG",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kA",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/ELEVATOR/kA",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "supply limit",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/ELEVATOR/supply limit",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "stator limit",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/ELEVATOR/stator limit",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "maxVelocity",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/ELEVATOR/maxVelocity",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "maxAcceleration",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/ELEVATOR/maxAcceleration",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "jerk",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/ELEVATOR/jerk",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              }
+            ]
+          },
+          {
+            "title": "Climber",
+            "x": 256.0,
+            "y": 0.0,
+            "width": 256.0,
+            "height": 768.0,
+            "type": "List Layout",
+            "properties": {
+              "label_position": "RIGHT"
+            },
+            "children": [
+              {
+                "title": "Update",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Toggle Button",
+                "properties": {
+                  "topic": "/MotorConfig/Climber/UpdateConfig",
+                  "period": 0.06,
+                  "data_type": "boolean"
+                }
+              },
+              {
+                "title": "kP",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Climber/kP",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kI",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Climber/kI",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kD",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Climber/kD",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kS",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Climber/kS",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kV",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Climber/kV",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kG",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Climber/kG",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kA",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Climber/kA",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "supply limit",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Climber/supply limit",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "stator limit",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Climber/stator limit",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "maxVelocity",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Climber/maxVelocity",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "maxAcceleration",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Climber/maxAcceleration",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "jerk",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Climber/jerk",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              }
+            ]
+          },
+          {
+            "title": "Arm",
+            "x": 512.0,
+            "y": 0.0,
+            "width": 256.0,
+            "height": 768.0,
+            "type": "List Layout",
+            "properties": {
+              "label_position": "RIGHT"
+            },
+            "children": [
+              {
+                "title": "Update",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Toggle Button",
+                "properties": {
+                  "topic": "/MotorConfig/Arm/UpdateConfig",
+                  "period": 0.06,
+                  "data_type": "boolean"
+                }
+              },
+              {
+                "title": "kP",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Arm/kP",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kI",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Arm/kI",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kD",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Arm/kD",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kS",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Arm/kS",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kV",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Arm/kV",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kG",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Arm/kG",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kA",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Arm/kA",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "supply limit",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Arm/supply limit",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "stator limit",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Arm/stator limit",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "maxVelocity",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Arm/maxVelocity",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "maxAcceleration",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Arm/maxAcceleration",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "jerk",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/Arm/jerk",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              }
+            ]
+          },
+          {
+            "title": "IntakeFlop",
+            "x": 768.0,
+            "y": 0.0,
+            "width": 256.0,
+            "height": 768.0,
+            "type": "List Layout",
+            "properties": {
+              "label_position": "RIGHT"
+            },
+            "children": [
+              {
+                "title": "Update",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Toggle Button",
+                "properties": {
+                  "topic": "/MotorConfig/IntakeFlop/UpdateConfig",
+                  "period": 0.06,
+                  "data_type": "boolean"
+                }
+              },
+              {
+                "title": "kP",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/IntakeFlop/kP",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kI",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/IntakeFlop/kI",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kD",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/IntakeFlop/kD",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kS",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/IntakeFlop/kS",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kV",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/IntakeFlop/kV",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kG",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/IntakeFlop/kG",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "kA",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/IntakeFlop/kA",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "supply limit",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/IntakeFlop/supply limit",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "stator limit",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/IntakeFlop/stator limit",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "maxVelocity",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/IntakeFlop/maxVelocity",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "maxAcceleration",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/IntakeFlop/maxAcceleration",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              },
+              {
+                "title": "jerk",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 128.0,
+                "height": 128.0,
+                "type": "Text Display",
+                "properties": {
+                  "topic": "/MotorConfig/IntakeFlop/jerk",
+                  "period": 0.06,
+                  "data_type": "double",
+                  "show_submit_button": true
+                }
+              }
+            ]
+          }
+        ],
+        "containers": []
+      }
+    }
+  ]
+}
